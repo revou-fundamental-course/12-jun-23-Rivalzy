@@ -8,8 +8,8 @@
 }
 
 #judul {
-  margin-top: 30px;
-  margin-left: 170px;
+  margin-top: 1rem;
+  text-align: center;
   color: #ffb062;
 }
 
@@ -19,18 +19,17 @@
   margin-top: 2rem;
 }
 
-#calcTemp {
+#wrapper {
   padding: 29px 67px;
   border-radius: 15px;
   min-height: 290px;
   background-color: #cdd8fd;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 100%; /* Menyesuaikan lebar wrapper dengan lebar layar */
+  max-width: 500px; /* Batasan lebar maksimum wrapper */
+  margin: 0 auto; /* Membuat wrapper berada di tengah */
 }
 
-label {
-  font-size: 30px;
-  line-height: 78px;
-}
 
 .input {
   width: 100%;
@@ -49,28 +48,45 @@ label {
   width: 120px;
   height: 34px;
   border-radius: 5px;
-  margin: 12px;
+  margin-left: 5px;
   font-size: 18px;
   font-weight: 500;
   border: none;
   outline: none;
 }
 
-#submit {
+.submit {
   width: 100px;
   border-radius: 5px;
-  margin: 30px 0 20px 0;
+  margin: 10px 0px 5px;
   font-size: 18px;
   background-color: rgb(218 229 220);
   padding: 5px;
   transition: all 0.5s ease;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: antiquewhite;
   cursor: pointer;
 }
 
-#result {
-  font-size: 27px;
+#cara {
+  font-size: 20px;
 }
+
+/* Media Queries */
+@media only screen  and (min-width: 400px) and (max-width: 600px) {
+  /* Modifikasi tampilan untuk smartphone atau layar kecil */
+  #wrapper {
+    padding: 20px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Modifikasi tampilan untuk tablet */
+  #wrapper
